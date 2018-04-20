@@ -1,7 +1,5 @@
 require 'erb'
 require 'json'
-require 'http'
-require 'optparse'
 
 require 'yelp/responses/business'
 

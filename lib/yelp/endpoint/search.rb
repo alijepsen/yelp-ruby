@@ -1,6 +1,4 @@
 require 'json'
-require 'http'
-require 'optparse'
 
 require 'yelp/responses/search'
 
