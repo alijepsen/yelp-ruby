@@ -1,12 +1,14 @@
 require 'erb'
 require 'json'
+require 'http'
+require 'optparse'
 
 require 'yelp/responses/business'
 
 module Yelp
   module Endpoint
     class Business
-      PATH = '/v2/business/'
+      PATH = '/v3/businesses/'
 
       def initialize(client)
         @client = client
