@@ -1,6 +1,6 @@
 module Yelp
   class Configuration
-    AUTH_KEYS = [:fusion_key]
+    AUTH_KEYS = [:fusion_key, :consumer_key, :consumer_secret, :token, :token_secret]
 
     attr_accessor *AUTH_KEYS
 
