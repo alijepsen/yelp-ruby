@@ -70,6 +70,7 @@ module Yelp
         # # Use the Faraday OAuth middleware for OAuth 1.0 requests
         # conn.request :oauth, @configuration.auth_keys
         conn.headers['Authorization'] = :Bearer, @configuration.auth_keys
+        conn.authorization :Bearer, @configuration.auth_keys
 
         # Using default http library, had to specify to get working
         conn.adapter :net_http
